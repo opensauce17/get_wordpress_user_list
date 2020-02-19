@@ -1,6 +1,6 @@
 # GET WORDPRESS USER LIST
 
-I was recently tasked to provide a list of all the wordpress users that are present on all our wordpress servers in all our environments. The requirement was to produce a single csv file with all the required data : 
+I was recently tasked to provide a list of all the WordPress users that are present on all our WordPress servers in all our environments. The requirement was to produce a single csv file with all the required data : 
 
 
 User Login  
@@ -18,6 +18,6 @@ An example of a single output row would look like:
 
 michaelhyland,michaelhyland,michael.hyland@kurtosys.com,2017/11/14 13:30,administrator,as400,production,p21
 
-I use the [Paramiko](https://www.paramiko.org/) Python module connect to each server. To get the user detail, I use the [Wordpress CLI](https://wp-cli.org/) and convert the user output details to comma delimited output with the additional requirements. Each server output is gathered into it's own csv file and I use the [Pandas](https://pandas.pydata.org/) python library to combine all the csv files into a single file.
+I use the [Paramiko](https://www.paramiko.org/) Python module connect to each server. To get the user detail, I use the [WordPress CLI](https://wp-cli.org/) and convert the user output details to comma delimited output with the additional requirements. Each server output is gathered into it's own csv file and I use the [Pandas](https://pandas.pydata.org/) python library to combine all the csv files into a single file.
 
-In the end I was able to gather over 7000 rows of user details from all our Wordpress servers.
+In the end I was able to gather over 7000 rows of user details from all our WordPress servers into a single file.
