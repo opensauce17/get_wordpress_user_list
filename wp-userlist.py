@@ -1,12 +1,12 @@
 #!/usr/bin/env python3
 
-import os, sys, select, paramiko, time, csv
+import os
+import paramiko
 import shutil
-import logging
 import glob
 import pandas as pd
 
-from bin import config_reader, banner, logger, colors
+from bin import banner, logger, colors
 
 from bin.logger import *
 
