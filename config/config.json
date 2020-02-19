@@ -1,0 +1,26 @@
+{
+    "APPLICATION": {
+        "BANNER": "WordPress User List",
+        "VERSION": "1.0.0-000"
+    },
+    "SSH_KEYS": {
+        "key1": "key1.pem",
+        "key2": "key2.pem",
+        "key3": "key3.pem"
+    },
+    "LOGGING": {
+        "LOG_LEVEL": "INFO",
+        "LOG_FORMAT": "%(asctime)s %(module)-5s [%(levelname)s] %(message)s",
+        "LOG_FILE": "./logs/logfile.log",
+        "LOG_FOLDER": "./logs"
+    },
+    "WP_SRV_LIST": {
+        "SERVER1_DEV": "server1-dev.example.com",
+        "SERVER1_STAGING": "server1-staging.example.com",
+        "SERVER1_PROD": "server1-prod.example.com",
+        "SERVER2_DEV": "server2-dev.example.com",
+        "SERVER2_STAGING": "server2-staging.example.com",
+        "SERVER2_PROD": "server3-staging.example.com"
+
+    }
+}
